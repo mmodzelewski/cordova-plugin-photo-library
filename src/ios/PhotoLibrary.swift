@@ -214,7 +214,7 @@ import Foundation
 
     }
 
-    func requestAuthorization(_ command: CDVInvokedUrlCommand) {
+    @objc(requestAuthorization:) func requestAuthorization(_ command: CDVInvokedUrlCommand) {
 
         let service = PhotoLibraryService.instance
 
